@@ -4,34 +4,39 @@
     <div class="product-grid">
       <!-- Прямоугольник 1 -->
       <div class="product">
+        <div class = "product-content">
         <div class="product-image">
-          <img src="" alt="Название товара 1">
+            <img src="@/assets/Булочка_с_корицей.jpg" alt="Название товара 1">
+            </div>
+              <div class="product-description">
+                <h3>Булочка с корицей</h3>
+              <p>Описание товара 1</p>
+            <p>Цена за штуку 1</p>
         </div>
-        <div class="product-description">
-          <h3>Название товара 1</h3>
-          <p>Описание товара 1</p>
-          <p>Цена за штуку 1</p>
         </div>
       </div>
 
       <!-- Продолжайте для других товаров -->
       <!-- Прямоугольник 2 -->
       <div class="product">
+        <div class = "product-content">
         <div class="product-image">
-          <img src="путь_к_картинке_2" alt="Название товара 2">
+          <img src="@/assets/булочки_с_изюмом.jpg" alt="Название товара 2">
         </div>
         <div class="product-description">
-          <h3>Название товара 2</h3>
+          <h3>отшмтгцмтгцтгцут</h3>
           <p>Описание товара 2</p>
           <p>Цена за штуку 2</p>
         </div>
+      </div>
       </div>
 
       <!-- Продолжайте аналогично для остальных товаров -->
       <!-- Прямоугольник 3 -->
       <div class="product">
+        <div class = "product-content">
         <div class="product-image">
-          <img src="путь_к_картинке_3" alt="Название товара 3">
+          <img src="@/assets/заварные_булочки.jpg" alt="Название товара 3">
         </div>
         <div class="product-description">
           <h3>Название товара 3</h3>
@@ -39,12 +44,14 @@
           <p>Цена за штуку 3</p>
         </div>
       </div>
+      </div>
 
       <!-- Продолжайте аналогично для остальных товаров -->
       <!-- Прямоугольник 4 -->
       <div class="product">
+        <div class = "product-content">
         <div class="product-image">
-          <img src="путь_к_картинке_4" alt="Название товара 4">
+          <img src="@/assets/булочки_с_лимоном.webp" alt="Название товара 4">
         </div>
         <div class="product-description">
           <h3>Название товара 4</h3>
@@ -52,12 +59,14 @@
           <p>Цена за штуку 4</p>
         </div>
       </div>
+    </div>
 
       <!-- Продолжайте аналогично для остальных товаров -->
       <!-- Прямоугольник 5 -->
       <div class="product">
+        <div class = "product-content">
         <div class="product-image">
-          <img src="путь_к_картинке_5" alt="Название товара 5">
+          <img src="@/assets/булочки_с_маком.webp" alt="Название товара 5">
         </div>
         <div class="product-description">
           <h3>Название товара 5</h3>
@@ -65,12 +74,14 @@
           <p>Цена за штуку 5</p>
         </div>
       </div>
+      </div>
 
       <!-- Продолжайте аналогично для остальных товаров -->
       <!-- Прямоугольник 6 -->
       <div class="product">
+        <div class = "product-content">
         <div class="product-image">
-          <img src="путь_к_картинке_6" alt="Название товара 6">
+          <img src="@/assets/булочки_с_повидлом.webp" alt="Название товара 6">
         </div>
         <div class="product-description">
           <h3>Название товара 6</h3>
@@ -78,6 +89,7 @@
           <p>Цена за штуку 6</p>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </template>
@@ -117,12 +129,19 @@ export default {
 }
 
 .product-image {
-  margin-bottom: 10px;
+  margin-right: 100px;
+  margin-top: 40px;
   /* Стили для картинки товара */
 }
 
 .product-description {
-  /* Стили для описания товара */
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+}
+.product-content {
+  display: flex;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
