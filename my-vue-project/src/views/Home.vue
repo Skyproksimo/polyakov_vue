@@ -8,8 +8,8 @@
         <p>
           Мы рады, что вы решили посмотреть галерею наших фотографий. Оставьте свой номер телефона и наши операторы свяжутся с вами.
         </p>
-        <input v-model="phoneNumber" type="text" placeholder="Введите ваш номер телефона" />
-        <button @click="sendData">Отправить</button>
+        <input v-model="phoneNumber" type="text" placeholder="Расскажите про вашу любимую булочку и мы обязательно ее сделаем" />
+        <button class = "sending-button" @click="sendData">Отправить</button>
       </div>
     </div>
     <Footer />
@@ -85,18 +85,26 @@ export default {
 }
 
 .gallery-image {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   border-radius: 8px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .text-container {
-  text-align: left;
+  text-align: center;
+  margin: 10px;
 }
 
+.sending-button{
+  margin: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+}
 input[type="text"] {
   width: 100%;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 </style>
