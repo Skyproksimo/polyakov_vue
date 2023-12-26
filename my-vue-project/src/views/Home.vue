@@ -20,6 +20,7 @@ export default {
 
 <style lang="scss">
 .home {
+  background-color: beige;
   display: flex;
   flex-direction: column;
   justify-content: center;

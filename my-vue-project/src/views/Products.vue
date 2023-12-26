@@ -1,7 +1,84 @@
 <template>
   <div class="products">
     <h1>Товары</h1>
-    <p>Текст о ваших товарах или ассортименте...</p>
+    <div class="product-grid">
+      <!-- Прямоугольник 1 -->
+      <div class="product">
+        <div class="product-image">
+          <img src="" alt="Название товара 1">
+        </div>
+        <div class="product-description">
+          <h3>Название товара 1</h3>
+          <p>Описание товара 1</p>
+          <p>Цена за штуку 1</p>
+        </div>
+      </div>
+
+      <!-- Продолжайте для других товаров -->
+      <!-- Прямоугольник 2 -->
+      <div class="product">
+        <div class="product-image">
+          <img src="путь_к_картинке_2" alt="Название товара 2">
+        </div>
+        <div class="product-description">
+          <h3>Название товара 2</h3>
+          <p>Описание товара 2</p>
+          <p>Цена за штуку 2</p>
+        </div>
+      </div>
+
+      <!-- Продолжайте аналогично для остальных товаров -->
+      <!-- Прямоугольник 3 -->
+      <div class="product">
+        <div class="product-image">
+          <img src="путь_к_картинке_3" alt="Название товара 3">
+        </div>
+        <div class="product-description">
+          <h3>Название товара 3</h3>
+          <p>Описание товара 3</p>
+          <p>Цена за штуку 3</p>
+        </div>
+      </div>
+
+      <!-- Продолжайте аналогично для остальных товаров -->
+      <!-- Прямоугольник 4 -->
+      <div class="product">
+        <div class="product-image">
+          <img src="путь_к_картинке_4" alt="Название товара 4">
+        </div>
+        <div class="product-description">
+          <h3>Название товара 4</h3>
+          <p>Описание товара 4</p>
+          <p>Цена за штуку 4</p>
+        </div>
+      </div>
+
+      <!-- Продолжайте аналогично для остальных товаров -->
+      <!-- Прямоугольник 5 -->
+      <div class="product">
+        <div class="product-image">
+          <img src="путь_к_картинке_5" alt="Название товара 5">
+        </div>
+        <div class="product-description">
+          <h3>Название товара 5</h3>
+          <p>Описание товара 5</p>
+          <p>Цена за штуку 5</p>
+        </div>
+      </div>
+
+      <!-- Продолжайте аналогично для остальных товаров -->
+      <!-- Прямоугольник 6 -->
+      <div class="product">
+        <div class="product-image">
+          <img src="путь_к_картинке_6" alt="Название товара 6">
+        </div>
+        <div class="product-description">
+          <h3>Название товара 6</h3>
+          <p>Описание товара 6</p>
+          <p>Цена за штуку 6</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -15,10 +92,42 @@ export default {
 .products {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 10vh;
-  text-align: center;
-  margin-top: 15vh;
+  padding: 20px;
+}
+
+/* Стили для сетки товаров */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.product {
+  width: calc(50% - 10px);
+  height: 250px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  margin-bottom: 10px;
+  /* Стили для картинки товара */
+}
+
+.product-description {
+  /* Стили для описания товара */
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    width: 100%;
+  }
 }
 </style>

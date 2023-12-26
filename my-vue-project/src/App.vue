@@ -25,6 +25,6 @@
     margin: 0;
   }
   body{
-    background-color: #9E8544;
+    background-color: beige;
   }
   </style>
