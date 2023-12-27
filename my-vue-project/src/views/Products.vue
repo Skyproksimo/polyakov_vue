@@ -16,7 +16,7 @@
         </div>
       </div>
 
-      <!-- Продолжайте для других товаров -->
+ 
       <!-- Прямоугольник 2 -->
       <div class="product">
         <div class = "product-content">
@@ -31,7 +31,7 @@
       </div>
       </div>
 
-      <!-- Продолжайте аналогично для остальных товаров -->
+    
       <!-- Прямоугольник 3 -->
       <div class="product">
         <div class = "product-content">
@@ -46,7 +46,7 @@
       </div>
       </div>
 
-      <!-- Продолжайте аналогично для остальных товаров -->
+      
       <!-- Прямоугольник 4 -->
       <div class="product">
         <div class = "product-content">
@@ -61,7 +61,6 @@
       </div>
     </div>
 
-      <!-- Продолжайте аналогично для остальных товаров -->
       <!-- Прямоугольник 5 -->
       <div class="product">
         <div class = "product-content">
@@ -76,7 +75,7 @@
       </div>
       </div>
 
-      <!-- Продолжайте аналогично для остальных товаров -->
+      
       <!-- Прямоугольник 6 -->
       <div class="product">
         <div class = "product-content">
