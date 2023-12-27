@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "react-scripts start"
+    "run": "npm run serve"
   },
   "dependencies": {
     "vue-router": "^4.2.5"
