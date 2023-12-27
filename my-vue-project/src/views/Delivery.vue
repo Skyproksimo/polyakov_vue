@@ -12,10 +12,19 @@
       </div>
       <button @click="submitDelivery">Оформить доставку</button>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from '@/components/Footer.vue';
+
+export default {
+  name: 'Delivery',
+  components: {
+    Footer
+  }
+}
 </script>
 
 <style scoped>
