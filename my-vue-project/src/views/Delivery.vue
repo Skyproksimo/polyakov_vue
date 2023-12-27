@@ -27,7 +27,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+
 .delivery-page {
   display: flex;
   justify-content: center;

@@ -1,15 +1,15 @@
 <template>
   <div class="home">
     <div class="gallery-container">
-      <button class="arrow-button" @click="prevImage">&lt;</button> <!-- Кнопка "назад" -->
+      <button class="arrow-button" v-on:click="prevImage">&lt;</button> <!-- Кнопка "назад" -->
       <img :src="currentImage" alt="Image" class="gallery-image" /> <!-- Элемент img для отображения изображения -->
-      <button class="arrow-button" @click="nextImage">&gt;</button> <!-- Кнопка "вперед" -->
+      <button class="arrow-button" v-on:click="nextImage">&gt;</button> <!-- Кнопка "вперед" -->
       <div class="text-container">
         <p>
           Мы надеемся что наш сайт вам очень понравился и вы сможете найти для себя ту самую булочку. Однако если вы ее не нашли, пожалуйста опишите что за булочку вы хотите.
         </p>
         <input v-model="phoneNumber" type="text" placeholder="Расскажите про вашу любимую булочку и мы обязательно ее сделаем" />
-        <button class = "sending-button" @click="sendData">Отправить</button>
+        <button class = "sending-button" v-on:click="sendData">Отправить</button>
       </div>
     </div>
     <Footer />

@@ -1,30 +1,37 @@
 <template>
-    <div id="app">
-      <!-- Подключаем компонент Header.vue -->
-      <Header /> <!-- Убедитесь, что здесь правильно указан компонент Header.vue -->
-      
-      <!-- Остальное содержимое вашего приложения, например, router-view -->
-      <router-view />
-    </div>
-  </template>
-  
-  <script>
-  // Импортируем компонент Header.vue
-  import Header from './components/Header.vue';
-  
-  export default {
-    name: 'App',
-    components: {
-      Header // Регистрируем компонент Header.vue
-    }
+  <!-- Открываем тег шаблона -->
+  <div id="app">
+    <!-- Основной контейнер приложения -->
+    <Header /> 
+    <!-- Импортируем компонент заголовка -->
+    <router-view />
+    <!-- Отображение содержимого маршрута с помощью компонента маршрутизации -->
+  </div>
+  <!-- Закрываем основной контейнер приложения -->
+</template>
+
+<script>
+// Импортируем компонент заголовка
+import Header from './components/Header.vue';
+
+export default {
+  // Название компонента
+  name: 'App',
+  // Регистрируем компонент заголовка
+  components: {
+    Header 
   }
-  </script>
-  
-  <style lang="scss">
-  *{
-    margin: 0;
-  }
-  body{
-    background-color: beige;
-  }
-  </style>
+}
+</script>
+
+<style lang="scss">
+/* Открываем стили с SCSS */
+* {
+  margin: 0; /* Обнуляем внешние отступы для всех элементов */
+}
+
+body {
+  /* Стили для тела документа */
+  background-color: beige; /* Устанавливаем цвет фона */
+}
+</style>
